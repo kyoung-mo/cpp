@@ -5,28 +5,9 @@ using namespace std;
 class Circle {
 public:
 	int radius;
-	Circle();
-	Circle(int r);
-	Circle(int w, int h);
-	double getArea();
+	double getArea()
+		;
 };
-
-
-Circle::Circle() {
-	radius = 1;
-	cout << "¿¿¿" << radius << "¿ ¿¿" << endl;
-}
-Circle::Circle(int r) {
-	radius = r;
-	cout << "¿¿¿" << radius << "¿ ¿¿" << endl;
-
-}
-
-Circle::Circle(int a, int b) {
-	radius = r;
-	cout << "¿¿¿" << radius << "¿ ¿¿" << endl;
-
-}
 
 double Circle::getArea() {
 	return 3.14 * radius * radius;
@@ -35,13 +16,15 @@ double Circle::getArea() {
 int main() {
 
 	Circle donut;
-	cout << " donut size : " << sizeof(donut);
+	cout << " donut size : " << sizeof(donut) << endl;
+	donut.radius = 1;
 	double area = donut.getArea();
 	cout << "donut ¿¿¿ " << area << endl;
 
 	cout.setf(std::ios_base::fixed); // ios_base¿ namespace, fixed¿¿ ¿¿¿ ¿¿¿¿¿¿
 
-	Circle pizza(15);
+	Circle pizza;
+	pizza.radius = 30;
 	area = pizza.getArea();
 	cout << "pizza ¿¿¿ " << area << endl;
 
