@@ -2,7 +2,7 @@
 class Shape {
 	Shape* next;
 protected:
-	virtual void draw() = 0;
+	virtual void draw();
 public:
 	Shape() { next = nullptr; }
 	virtual ~Shape(){}
